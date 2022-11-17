@@ -1,0 +1,392 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    margin: 1rem 1rem 0 1rem;
+    font-weight: 500;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    color: hsl(0, 0%, 41%);
+}
+
+#about{
+    flex-basis: 776px;
+}
+
+#features,
+#company {
+    margin-right: 5px !important;
+}
+
+.icon-arrow-down {
+    margin: 16px 16px 0 0 !important; 
+}
+
+#snap {
+    font-weight: 900;
+    font-size: 23px;
+    font-family: 'Epilogue', sans-serif;
+    color: hsl(0, 0%, 8%);
+}
+
+#register {
+    border: 1.5px solid hsl(0, 0%, 8%);
+    border-radius: 12px;
+    width: 60px;
+    padding: 9px; 
+    cursor: pointer;
+}
+
+.first-sec {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100px;
+    left: 60px;
+    border: 1px solid hsl(0, 0%, 98%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 40px hsl(0, 0%, 80%);
+    padding: 10px;
+    display: none;
+}
+
+.second-sec{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100px;
+    left: 215px;
+    border: 1px solid hsl(0, 0%, 98%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 40px hsl(0, 0%, 80%);
+    display: none;
+}
+
+.first-text {
+    margin: 5px 0 ;
+}
+
+.icon {
+    margin: 0px 10px 0px 5px  ;
+}
+
+.sec-text {
+    margin: 10px 0 10px 17px;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    padding-top: 4.375rem;
+}
+
+#div-one {
+    margin-top: 70px;
+}
+
+#pic-desktop {
+    width: 25rem;
+}
+
+.body-word {
+    font-weight: bolder;
+    font-size: 4.375rem;
+    font-family: 'Epilogue', sans-serif;
+    height: 4.375rem;
+    margin: 0;
+}
+
+#work {
+    margin-bottom: 1.6rem;
+}
+
+.body-text {
+    font-family: 'Epilogue', sans-serif;
+    margin: 50px 0;
+    font-weight: 270;
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+}
+
+#more {
+    background-color:  hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    font-size: larger;
+    width: 120px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#more:hover {
+    background-color:  hsl(0, 0%, 98%);
+    border: 2px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+
+}
+
+#client {
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.client {
+    padding: 0 3.125rem 3.125rem 0;
+}
+/* cursor */
+#more,
+#register,
+#company,
+#careers,
+#login,
+#about,
+#features,
+#span {
+    cursor: pointer;
+}
+
+#register:hover,
+#company:active,
+#careers:hover,
+#login:hover,
+#about:hover,
+#features:active
+{
+    font-weight: 610;
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+.visible {
+    display: flex !important;
+    display: block;
+}
+
+.invisible {
+    display: none ;
+}
+
+#pic-mobile {
+    display: none;
+}
+
+.body-word_mobile {
+    display: none;
+}
+
+.icon-menu {
+    display: none;
+}
+
+#third-sec {
+    display: none;
+}
+
+@media screen and (max-width:933px) {
+    #pic-mobile {
+        align-self: center;
+        display: block;
+        width: 800px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #register,
+    #company,
+    #careers,
+    #login,
+    #about,
+    #features,
+    .icon-arrow-down
+    {
+        display: none;
+        color: hsl(0, 0%, 8%);
+    }
+
+    #snap {
+        flex-basis: 900px;
+    }
+    
+    .icon-menu {
+        display: block;
+    }
+
+    #body {
+        flex-direction: column;
+    }
+
+    #div-one {
+        margin-top: 10px;
+    }
+
+    #pic-desktop {
+        display: none;
+    }
+
+    #pic-mobile {
+        align-self: center;
+        display: block;
+        width: 350px;
+    }
+
+    .body-word {
+        display: none;
+    }
+
+    .body-word_mobile {
+        display: block;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .body-text {
+        margin: 5px 0;
+        text-align: center;
+        line-height: 20px;
+        font-size: 1.06rem;
+        font-weight: 250;
+    }
+
+    #more-id {
+        display: flex;
+        justify-content: center;
+    }
+
+    #more {
+    margin-top: 18px;
+    font-size: 9px;
+    width: 70px;
+    
+    }
+
+    #client {
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .client {
+        padding: 0 1rem 2rem 1rem;
+        width: 60px;
+    }
+
+    #third-sec {
+        position: absolute;
+        top: 0;
+        width: 270px;
+        height: 700px;
+        display: none;
+    }
+
+    #expand {
+        z-index: 6;
+        flex-basis: 300;
+        justify-content: end;
+        justify-self: end;
+        align-self: flex-end;
+    }
+
+    .backdrop {
+        position: absolute;
+        height: 910px;
+        width: 101vw;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: hsla(0, 0%, 6%, 0.432);
+        z-index: 1;
+        display: none;
+    }
+    
+    #menu-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 160px;
+        top: 0;
+        width: 220px;
+        z-index: 5;
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    #close-menu {
+        width: 25px;
+        margin-left: 160px;
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+    
+    #drop-down_one {
+        padding: 2px 15px 25px 15px;
+        display: none;
+        flex-direction: column;
+    }
+
+    .drop-down_one {
+        margin: 0px 10px 10px 10px;
+        cursor: pointer;
+    }
+
+    .icon-two {
+        padding: 0 5px;
+    }
+
+    .menu-features {
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    .menu-company {
+        margin-top: 0;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    #drop-down_two {
+        padding: 2px 15px 25px 15px;
+        display: none;
+        flex-direction: column;
+    }
+
+    .drop-down_two {
+        margin: 0px 10px 20px 10px;
+        /* align-self: center; */
+    }
+
+    .menu-careers {
+        padding: 2px 0px 5px 10px;
+        margin-top: 0;
+    }
+
+    .menu-careers {
+        margin-top: 0;
+        padding: 2px 0px 5px 10px;
+    }
+
+    .menu-login {
+        border-right-width: 10px;
+        margin-right: 100px;
+    }
+
+    .menu-login,
+    .menu-register {
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .menu-register {
+        border: 2px solid hsl(0, 0%, 8%);
+        border-radius: 10px;
+        width: 150px;
+        height: 25px;
+        padding-top: 5px;
+        margin-left: 30px;
+        padding-left: 0px;
+    }
+
+}
