@@ -185,7 +185,8 @@ nav {
     display: none;
 }
 
-#third-sec {
+#third-sec,
+#menu-box {
     display: none;
 }
 
