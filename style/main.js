@@ -11,11 +11,7 @@ const thirdSec = document.querySelector('#third-sec');
 const dropDownOne = document.querySelector('#drop-down_one');
 const dropDownTwo = document.querySelector('#drop-down_two');
 
-
-
 features.addEventListener( 'click', ()=> {
-    // let features = document.querySelector('#features');
-
     firstSec.classList.toggle('visible');
     features.style.cssText = 'color:black';
 })
@@ -32,8 +28,6 @@ iconMenu.addEventListener ( 'click', ()=> {
 closeMenu.addEventListener('click', ()=> {
     backdrop.classList.remove('visible');
     thirdSec.classList.remove('visible');
-    // dropDownOne.classList.toggle ('visible')
-    // dropDownTwo.classList.toggle ('visible')
 })
 
 menuFeatures.addEventListener( 'click', ()=> {

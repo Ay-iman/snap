@@ -1,5 +1,7 @@
 body {
     background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -15,7 +17,7 @@ nav {
     color: hsl(0, 0%, 41%);
 }
 
-#about{
+#about {
     flex-basis: 776px;
 }
 
@@ -25,7 +27,7 @@ nav {
 }
 
 .icon-arrow-down {
-    margin: 16px 16px 0 0 !important; 
+    margin: 16px 16px 0 0 !important;
 }
 
 #snap {
@@ -39,7 +41,7 @@ nav {
     border: 1.5px solid hsl(0, 0%, 8%);
     border-radius: 12px;
     width: 60px;
-    padding: 9px; 
+    padding: 9px;
     cursor: pointer;
 }
 
@@ -56,7 +58,7 @@ nav {
     display: none;
 }
 
-.second-sec{
+.second-sec {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -69,11 +71,11 @@ nav {
 }
 
 .first-text {
-    margin: 5px 0 ;
+    margin: 5px 0;
 }
 
 .icon {
-    margin: 0px 10px 0px 5px  ;
+    margin: 0px 10px 0px 5px;
 }
 
 .sec-text {
@@ -115,7 +117,7 @@ nav {
 }
 
 #more {
-    background-color:  hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
     font-size: larger;
     width: 120px;
@@ -125,7 +127,7 @@ nav {
 }
 
 #more:hover {
-    background-color:  hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 98%);
     border: 2px solid hsl(0, 0%, 8%);
     color: hsl(0, 0%, 8%);
 
@@ -140,6 +142,7 @@ nav {
 .client {
     padding: 0 3.125rem 3.125rem 0;
 }
+
 /* cursor */
 #more,
 #register,
@@ -154,11 +157,12 @@ nav {
 
 #register:hover,
 #company:active,
+#company:hover,
 #careers:hover,
 #login:hover,
 #about:hover,
-#features:active
-{
+#features:active,
+#features:hover {
     font-weight: 610;
     color: hsl(0, 0%, 0%);
     cursor: pointer;
@@ -170,7 +174,7 @@ nav {
 }
 
 .invisible {
-    display: none ;
+    display: none;
 }
 
 #pic-mobile {
@@ -190,22 +194,22 @@ nav {
     display: none;
 }
 
-@media screen and (max-width:933px) {
+/* @media screen and (max-width:933px) {
     #pic-mobile {
         align-self: center;
         display: block;
         width: 800px;
     }
-}
+} */
 @media screen and (max-width: 1000px) {
+
     #register,
     #company,
     #careers,
     #login,
     #about,
     #features,
-    .icon-arrow-down
-    {
+    .icon-arrow-down {
         display: none;
         color: hsl(0, 0%, 8%);
     }
@@ -213,7 +217,7 @@ nav {
     #snap {
         flex-basis: 900px;
     }
-    
+
     .icon-menu {
         display: block;
     }
@@ -233,7 +237,7 @@ nav {
     #pic-mobile {
         align-self: center;
         display: block;
-        width: 350px;
+        width: 80%;
     }
 
     .body-word {
@@ -260,10 +264,9 @@ nav {
     }
 
     #more {
-    margin-top: 18px;
-    font-size: 9px;
-    width: 70px;
-    
+        margin-top: 18px;
+        font-size: 1rem;
+        width: 15%;
     }
 
     #client {
@@ -278,11 +281,10 @@ nav {
 
     #third-sec {
         position: absolute;
-        top: 0;
+        /* top: 0; */
         right: 0;
-        width: 270px;
-        height: 700px;
         display: none;
+        border-radius: 8px;
     }
 
     #expand {
@@ -295,25 +297,27 @@ nav {
 
     .backdrop {
         position: absolute;
-        height: 910px;
-        width: 101vw;
+        height: 100vh;
+        width: 100vw;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: hsla(0, 0%, 6%, 0.432);
+        background-color: rgba(0, 0, 0, 0.719);
         z-index: 1;
         display: none;
     }
-    
+
     #menu-box {
         display: flex;
         flex-direction: column;
         margin-left: 160px;
         top: 0;
+        right: 0;
         width: 220px;
         z-index: 5;
         background-color: hsl(0, 0%, 98%);
+        border-radius: 10px;
     }
 
     #close-menu {
@@ -322,7 +326,7 @@ nav {
         margin-right: 100px;
         margin-top: 30px;
     }
-    
+
     #drop-down_one {
         padding: 2px 15px 25px 15px;
         display: none;
